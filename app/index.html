@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vice City Trophy Ledger — GTA 6 Trophy Guide &amp; Tracker</title>
+<meta name="description" content="Offline guide and tracker for all 55 Grand Theft Auto VI trophies on PlayStation 5: checklist, roadmap to the platinum, missables, and a cited guide for every trophy.">
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <div class="brand-mark" aria-hidden="true">VC</div>
+    <div>
+      <h1>Vice City Trophy Ledger</h1>
+      <p class="tagline">Grand Theft Auto VI · 55 PS5 trophies · offline guide &amp; tracker</p>
+    </div>
+  </div>
+  <div class="progress-block" id="progressBlock" aria-live="polite">
+    <div class="progress-count"><span id="earnedCount">0</span><span class="of">/ 55 earned</span></div>
+    <div class="progress-bar"><div class="progress-fill" id="progressFill" style="width:0%"></div></div>
+    <div class="progress-grades" id="progressGrades"></div>
+  </div>
+</header>
+
+<nav class="tabs" aria-label="Views">
+  <a href="#/" data-route="checklist">Checklist</a>
+  <a href="#/roadmap" data-route="roadmap">Roadmap to Platinum</a>
+  <a href="#/missables" data-route="missables">Missables <span class="tab-badge" id="missableBadge">14</span></a>
+  <a href="#/sources" data-route="sources">Sources</a>
+</nav>
+
+<section class="toolbar" id="toolbar">
+  <input id="searchBox" type="search" placeholder="Search trophies by name or description…" aria-label="Search trophies" autocomplete="off">
+  <div class="chips" id="kindChips" role="group" aria-label="Filter by kind">
+    <button type="button" data-kind="all" class="chip active">All</button>
+    <button type="button" data-kind="story" class="chip">Story</button>
+    <button type="button" data-kind="missable" class="chip">Missable</button>
+    <button type="button" data-kind="collectibles" class="chip">Collectibles</button>
+    <button type="button" data-kind="activities" class="chip">Activities</button>
+    <button type="button" data-kind="online" class="chip">Online</button>
+  </div>
+  <label class="spoiler-toggle" title="Hide the names and descriptions of hidden story trophies until you earn them">
+    <input type="checkbox" id="spoilerToggle"> <span>Hide spoilers</span>
+  </label>
+  <div class="save-actions">
+    <button type="button" id="exportBtn">Export progress</button>
+    <button type="button" id="importBtn">Import progress</button>
+    <input type="file" id="importFile" accept=".json,application/json" hidden>
+    <button type="button" id="resetBtn" class="danger">Reset</button>
+  </div>
+</section>
+
+<main class="layout">
+  <section class="list-pane" id="listPane" aria-label="Trophy list"></section>
+  <aside class="detail-pane" id="detailPane" aria-label="Trophy guide"></aside>
+</main>
+
+<section class="view-pane" id="viewPane" hidden></section>
+
+<footer class="foot">
+  <p>Names, descriptions and grades are the official PlayStation list as published on Exophase and PSNProfiles. Guides are written for this ledger in our own words and cite their sources beside each trophy. No Rockstar artwork is used; the look is our own. Works fully offline — progress is saved in your browser only.</p>
+  <p class="foot-note">Demo mode: add <code>?demo=1</code> to the address to preview the tracker with 13 trophies already earned.</p>
+</footer>
+
+<script type="module" src="./js/boot.js"></script>
+</body>
+</html>
